@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JOUFX - نادي المبدعين</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-cover bg-center text-gray-800" style="background-image: url('bg.jpg')">
+    <header class="bg-white/90 backdrop-blur-md shadow-md fixed top-0 w-full z-50">
+      <div class="container mx-auto px-4 py-4 flex flex-col items-center">
+        <div class="text-3xl font-extrabold text-pink-600 mb-2">JOUFX</div>
+        <nav class="flex flex-wrap justify-center gap-6 text-sm md:text-base text-gray-800">
+          <a href="#home" class="hover:text-pink-600">الرئيسية</a>
+          <a href="#about" class="hover:text-pink-600">من نحن</a>
+          <a href="#events" class="hover:text-pink-600">الفعاليات</a>
+          <a href="#goals" class="hover:text-pink-600">أهدافنا</a>
+          <a href="#contact" class="hover:text-pink-600">تواصل</a>
+          <a href="#register" class="border border-pink-500 text-pink-600 px-3 py-1 rounded hover:bg-pink-500 hover:text-white transition">إنشاء حساب</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pt-36">
+      <section id="home" class="text-center py-32 bg-pink-100/60">
+        <h1 class="text-5xl font-bold text-pink-600 mb-4">أهلاً بك في عالم الإبداع JOUFX</h1>
+        <p class="text-xl">منصة الإبداع الرقمي في منطقة الجوف</p>
+      </section>
+
+      <section id="about" class="bg-white/90 py-20 px-6 text-center">
+        <h2 class="text-3xl font-bold text-pink-600 mb-4">عن JOUFX</h2>
+        <p class="max-w-2xl mx-auto text-lg text-gray-700 leading-relaxed">
+          JOUFX هو نادي طلابي تقني في منطقة الجوف، يجمع بين البرمجة، التصميم، والعمل الجماعي لإنتاج أفكار رقمية مبتكرة وتجارب تقنية ممتعة.
+        </p>
+      </section>
+
+      <section id="events" class="bg-pink-50 py-20 px-6 text-center">
+        <h2 class="text-3xl font-bold text-pink-600 mb-8">أبرز فعالياتنا</h2>
+        <ul class="max-w-xl mx-auto space-y-4 text-gray-700 text-lg">
+          <li> معسكر الانطلاقة لبناء الويب</li>
+          <li> لقاءات تقنية مع خبراء في المجال</li>
+          <li> تحديات أسبوعية وأفكار تطبيقات</li>
+          <li> ورش UX/UI وGitHub</li>
+        </ul>
+      </section>
+
+      <section id="goals" class="bg-white/90 py-20 px-6 text-center">
+        <h2 class="text-3xl font-bold text-pink-600 mb-8">ماذا نهدف إليه؟</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+            <h3 class="text-xl font-bold mb-2 text-pink-500">بناء مهارات تقنية</h3>
+            <p class="text-gray-600">نساعد أعضاء النادي على تطوير مهاراتهم العملية في مجالات البرمجة والتصميم</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+            <h3 class="text-xl font-bold mb-2 text-pink-500">بيئة محفزة</h3>
+            <p class="text-gray-600">نوفر مجتمع شبابي داعم، يشجع على التعلم والإبداع والمشاركة الفعالة</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow hover:scale-105 transition">
+            <h3 class="text-xl font-bold mb-2 text-pink-500">إنتاج مشاريع حقيقيه</h3>
+            <p class="text-gray-600">نشجع الطلاب على بناء مشاريع واقعية تُعرض للعامة وتُضيف لسيرتهم الذاتيه</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-pink-50 py-20 px-6 text-center">
+        <h2 class="text-3xl font-bold text-pink-600 mb-4">راسلنا مباشره</h2>
+        <form class="max-w-lg mx-auto mt-6 space-y-4">
+          <input type="text" placeholder="اسمك الكامل" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" />
+          <input type="email" placeholder="بريدك الإلكتروني" class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300" />
+          <textarea rows="4" placeholder="اكتب رسالتك هنا..." class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-300"></textarea>
+          <button class="bg-pink-500 text-white px-6 py-2 rounded-lg hover:bg-pink-600 transition">أرسل الآن</button>
+        </form>
+      </section>
+
+      <section id="register" class="py-20 px-6 bg-white/90 text-center">
+        <h2 class="text-3xl font-bold text-pink-600 mb-6">سجّل معنا وابدأ رحلتك</h2>
+        <form class="max-w-lg mx-auto space-y-4">
+          <input type="text" placeholder="اسم المستخدم" class="w-full px-4 py-3 rounded border border-gray-300" />
+          <input type="email" placeholder="البريد الإلكتروني" class="w-full px-4 py-3 rounded border border-gray-300" />
+          <input type="password" placeholder="كلمة المرور" class="w-full px-4 py-3 rounded border border-gray-300" />
+          <select class="w-full px-4 py-3 rounded border border-gray-300 text-gray-600">
+            <option>اختر الجنس</option>
+            <option>أنثى</option>
+            <option>ذكر</option>
+          </select>
+          <button class="w-full bg-pink-500 text-white py-3 rounded-lg hover:bg-pink-600 transition">إنشاء حساب</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
